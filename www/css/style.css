@@ -1,0 +1,30 @@
+/* Empty. Add your own CSS if you like  background: url(../img/bg3.png); */
+body{
+	background: url(../img/b3.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	
+
+	
+}
+
+.bg{
+	background-color: blue;
+}
+
+
+h2{
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+#model{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+/*body{
+	background-color: blue;
+	
+}*/

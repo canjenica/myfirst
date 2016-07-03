@@ -1,0 +1,31 @@
+
+<ion-content >
+        <h2 class="text-center" />
+              Collection Notes
+            </h2>
+          <div class="list list-inset">
+            <label class="item item-input">
+              <span class="input-label">Username</span>
+              <input type="text" ng-model="user.username">
+            </label>
+          </div>
+          <div class="list list-inset">
+            <label class="item item-input">
+              <span class="input-label">Password</span>
+              <input type="password" ng-model="user.password">
+            </label>
+          </div>
+          <div class="padding">
+            <button class="button button-block button-balanced" ng-click="signIn(user)">
+              Sign-In
+            </button>
+            <p class="text-center">
+              New to Collection Notes?
+            </p>
+            <p class="text-center">
+              <a href="#/forgot-password">Create an account.</a>
+            </p>
+          </div>
+        </ion-content>
+
+        
