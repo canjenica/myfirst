@@ -10,13 +10,30 @@ body{
 }
 
 .bg{
-	background-color: blue;
+	background: url(../img/b3.png) no-repeat center;
+	background-size:cover;
 }
 
+.input-label{
+	font-weight: 400;
+	font-family:Times New Roman;
+	font-size: 18px;
+}
 
-h2{
-	padding-top: 80px;
-	padding-bottom: 50px;
+.signup{
+
+	color: black; 
+	font-weight: 600;
+	 text-align: center;
+	font-family:Ar Hermann; 
+}
+.tname{
+	color: rgb(0, 0, 0); 
+	font-weight: 600; 
+	font-style: italic; 
+	text-align: center;
+	font-size: 50px;
+	font-family:Ar Hermann;
 }
 
 #model{
@@ -24,7 +41,3 @@ h2{
 	margin-right: 100px;
 }
 
-/*body{
-	background-color: blue;
-	
-}*/

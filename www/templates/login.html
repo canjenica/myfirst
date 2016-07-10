@@ -1,8 +1,10 @@
 
-<ion-content >
-        <h2 class="text-center" />
-              Collection Notes
-            </h2>
+<ion-content class="bg">
+  <div style="width: 283px; height: 100px;" class="spacer"></div>
+      <p class="tname ">Collection</p><br />
+        <p class="tname ">Notes</p><br>
+        <div style="width: 283px; height: 36px;" class="spacer"></div>
+         <form id="signup-form2">
           <div class="list list-inset">
             <label class="item item-input">
               <span class="input-label">Username</span>
@@ -16,16 +18,12 @@
             </label>
           </div>
           <div class="padding">
-            <button class="button button-block button-balanced" ng-click="signIn(user)">
-              Sign-In
-            </button>
-            <p class="text-center">
-              New to Collection Notes?
-            </p>
-            <p class="text-center">
-              <a href="#/forgot-password">Create an account.</a>
-            </p>
+            <div style="width: 283px; height: 18px;" class="spacer"></div>
+            <a class=" button button-balanced  button-block " id="login-button1"  ui-sref="tabsController.home">Log in</a>
+            <p class=" " style="color:#000000;text-align:center;" id="login-markdown1">New to Collection Notes?</p>
+            <a class=" button button-positive button-small button-block button-clear icon ion-android-create " style="font-weight:600;font-style:italic;border-radius:2px 2px 2px 2px;" id="login-button2" ui-sref="signup">Create an account.</a>
           </div>
-        </ion-content>
+        </form>
+</ion-content>
 
         

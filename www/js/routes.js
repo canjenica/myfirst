@@ -1,25 +1,4 @@
-// Ionic Starter App
-
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
-// 'starter.services' is found in services.js
-// 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
-
-.run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
-    if (window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-    }
-    if (window.StatusBar) {
-      // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
-    }
-  });
-})
+angular.module('starter.routes', [])
 
 .config(function($stateProvider, $urlRouterProvider) {
 
@@ -28,15 +7,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-
+    
   .state('login', {
       url: '/login',
       templateUrl: 'templates/login.html',
       controller: 'LoginCtrl'
   })
 
+
       .state('tabsController.home', {
-    url: '/tabsControllerhome',
+    url: '/page3',
     views: {
       'tab2': {
         templateUrl: 'templates/home.html',
@@ -46,7 +26,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('tabsController.collectionNotes', {
-    url: '/tabsControllerCN',
+    url: '/page4',
     views: {
       'tab3': {
         templateUrl: 'templates/collectionNotes.html',
@@ -56,7 +36,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('tabsController.profileSetting', {
-    url: '/tabsControllerPS',
+    url: '/page5',
     views: {
       'tab1': {
         templateUrl: 'templates/profileSetting.html',
@@ -66,9 +46,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('tabsController', {
-    url: '/tabsController1',
+    url: '/page2',
     templateUrl: 'templates/tabsController.html',
     abstract:true
+  })
+
+  .state('login', {
+    url: '/page1',
+    templateUrl: 'templates/login.html',
+    controller: 'loginCtrl'
   })
 
   .state('signup', {
@@ -79,5 +65,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 $urlRouterProvider.otherwise('/login')
 
+  
 
 });
